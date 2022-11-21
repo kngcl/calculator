@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  color: #fff;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#page_container {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 6px 7px 10px #4e4d4d;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  height: 450px;
+  border-radius: 10px;
+  margin: auto;
+  background-color: #000;
+}
+
+.display {
+  width: 200px;
+  height: 150px;
+  background-color: #323131;
+  color: #fff;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.display span {
+  margin-right: 5px;
+}
+
+.current_operand span {
+  font-size: 32px;
+}
+
+.previous_operand span {
+  display: none;
+}
+
+.calc_button_rows_container {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.row {
+  width: 200px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  margin: 5px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  border: none;
+}
+
+button:hover {
+  opacity:0.9;
+  box-shadow: 1px 1px 4px #080808;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.light-grey {
+  background-color: #cec5c5;
+  font-size: la;
+}
+
+.operations,
+.equals {
+  color: #fff;
+  background-color: orange;
+  font-size: larger;
+}
+
+#percentage {
+  background-color: #cec5c5;
+  color: black;
+}
+
+.number-btn {
+  background-color: #353333;
+  color: #fff;
+  font-size: 22px;
+}
+
+#number_0 {
+  width: 89px;
+  border-radius: 100px;
+  font-size: 22px;
+  color: #fff;
+  background-color:  #353333;
+}
