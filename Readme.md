@@ -4,7 +4,7 @@ We have created calculator which does several operations.
 
 ## App
 
-![calculator](assets/images/)
+![calculator](assets/images/Screenshot%20from%202022-11-21%2014-47-00.png)
 
 ### Built With
 
