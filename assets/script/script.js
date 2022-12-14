@@ -23,12 +23,13 @@ function appendNumber (number) {
   if (number === '.' && currentOperand.textContent.includes('.')) {
     return
   }
-  (currentOperand.textContent += number).toString
+  let x = currentOperand.textContent += number
+      x.toString
   if (
-    currentOperand.textContent[0] === '0' &&
-    currentOperand.textContent[1] === '0'
+    x[0] === '0' &&
+    x[1] === '0'
   ) {
-    currentOperand.textContent = '0'
+    x = '0'
   }
 }
 
@@ -86,7 +87,7 @@ function changeSign () {
 // EVENT LISTENERS
 AC.addEventListener('click', allClear)
 
-//number buttons
+// number buttons
 numberBtn.forEach((button) => {
   button.addEventListener('click', () => {
     if (currentOperation === 'equals') {
