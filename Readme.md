@@ -10,7 +10,7 @@ We have created calculator which does several operations.
 
 - HTML
 - CSS
-- JAVASCRIPT
+- JavaScript
 
 ### Prerequisites
 
@@ -19,7 +19,7 @@ Knowledge about:
 - HTML
 - CSS
 - Google chrome
-- JAVASCRIPT
+- JavaScript
   
 ## Clone project
 

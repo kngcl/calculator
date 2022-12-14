@@ -1,11 +1,11 @@
-const numberBtn = document.querySelectorAll('.number_btn')
+const numberBtn = document.querySelectorAll('.numberbtn')
 const AC = document.getElementById('AC')
-const plusOrMinus = document.getElementById('plus_or_minus')
+const plusOrMinus = document.getElementById('plusorminus')
 const percentage = document.getElementById('percentage')
 const operationBtn = document.querySelectorAll('.operations')
 const equals = document.getElementById('equals')
-const currentOperand = document.querySelector('#current_operand span')
-const previousOperand = document.querySelector('#previous_operand span')
+const currentOperand = document.querySelector('#currentoperand span')
+const previousOperand = document.querySelector('#previousoperand span')
 
 let currentOperation = ''
 
