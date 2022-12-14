@@ -20,13 +20,13 @@ function allClear () {
 
 // Append number to screen when number button pressed
 function appendNumber (number) {
-  if (number == '.' && currentOperand.textContent.includes('.')) {
+  if (number === '.' && currentOperand.textContent.includes('.')) {
     return
   }
   (currentOperand.textContent += number).toString
   if (
-    currentOperand.textContent[0] == '0' &&
-    currentOperand.textContent[1] == '0'
+    currentOperand.textContent[0] === '0' &&
+    currentOperand.textContent[1] === '0'
   ) {
     currentOperand.textContent = '0'
   }
