@@ -23,8 +23,8 @@ function appendNumber (number) {
     return
   }
   let x = currentOperand.textContent += number
-      x.toString
-  if (x[0] === '0' && x[1] === '0') {
+  x.toString
+  if (x[0] && x[1] === '0') {
     x = '0'
   }
 }
