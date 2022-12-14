@@ -22,7 +22,7 @@ function appendNumber (number) {
   if (number === '.' && currentOperand.textContent.includes('.')) {
     return
   }
-  let x = currentOperand.textContent += number
+  const x = currentOperand.textContent += number
   let y = x.toString
   if (y[0] && y[1] === '0') {
     y = '0'
