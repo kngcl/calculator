@@ -1,5 +1,5 @@
 const numberBtn = document.querySelectorAll('.numberbtn')
-const AC = document.getElementById('AC')
+const AC = document.getElementById('ac')
 const plusOrMinus = document.getElementById('plusorminus')
 const percentage = document.getElementById('percentage')
 const operationBtn = document.querySelectorAll('.operations')
@@ -45,10 +45,10 @@ function updateOperation (operation) {
 }
 
 // Perform calculation and update display
-function calculate() {
+function calculate () {
   let result = ''
-  let b = Number(currentOperand.textContent)
-  let a = Number(previousOperand.textContent)
+  const b = Number(currentOperand.textContent)
+  const a = Number(previousOperand.textContent)
   console.log(a, b, currentOperation)
 
   switch (currentOperation) {
@@ -75,7 +75,7 @@ function calculate() {
 
 // Change the sign of currentOperand
 function changeSign () {
-  let b = Number(currentOperand.textContent)
+  const b = Number(currentOperand.textContent)
   if (b >= 0) {
     currentOperand.textContent = '-' + currentOperand.textContent
   } else {
@@ -98,19 +98,19 @@ numberBtn.forEach((button) => {
   })
 })
 
-//operation buttons
+// operation buttons
 operationBtn.forEach((button) => {
   button.addEventListener('click', () => {
     updateOperation(button.id)
   })
 })
 
-//equals button
+// equals button
 equals.addEventListener('click', () => {
   calculate()
 })
 
-//plusorMinus button
+// plusorMinus button
 plusOrMinus.addEventListener('click', () => {
   changeSign()
 })
