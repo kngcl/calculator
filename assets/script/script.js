@@ -23,9 +23,9 @@ function appendNumber (number) {
     return
   }
   let x = currentOperand.textContent += number
-  x.toString
-  if (x[0] && x[1] === '0') {
-    x = '0'
+  let y = x.toString
+  if (y[0] && y[1] === '0') {
+    y = '0'
   }
 }
 
