@@ -1,7 +1,6 @@
 const numberBtn = document.querySelectorAll('.numberbtn')
 const AC = document.getElementById('ac')
 const plusOrMinus = document.getElementById('plusorminus')
-const percentage = document.getElementById('percentage')
 const operationBtn = document.querySelectorAll('.operations')
 const equals = document.getElementById('equals')
 const currentOperand = document.querySelector('#currentoperand span')
@@ -25,10 +24,7 @@ function appendNumber (number) {
   }
   let x = currentOperand.textContent += number
       x.toString
-  if (
-    x[0] === '0' &&
-    x[1] === '0'
-  ) {
+  if (x[0] === '0' && x[1] === '0') {
     x = '0'
   }
 }
